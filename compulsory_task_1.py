@@ -1,5 +1,5 @@
 """
-This is a function to show class inheritance
+This is a program to show class inheritance
 """
 
 class Course:
@@ -38,12 +38,13 @@ class OOPCourse(Course):
         trainer (str): The name of the course trainer.
     """
 
-    def __init__(self) -> None:
+    def __init__(self, description = "OOP Fundamentals",
+                 trainer = "Mr Anon A Mouse"):
         """
         Initializes the OOPCourse with a description and trainer name.
         """
-        self.description = "OOP Fundamentals"
-        self.trainer = "Mr Anon A. Mouse"
+        self.description = description
+        self.trainer = trainer
 
     def trainer_details(self):
         """
